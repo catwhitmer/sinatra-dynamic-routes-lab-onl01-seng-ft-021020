@@ -38,10 +38,10 @@ get "/reversename/:name" do
     "#{@add}.to_s"
     elsif @subtract = @number1 - @number2
     "#{@subtract}.to_s"
-    elsif @subtract = @number1 - @number2
-    "#{@subtract}.to_s"
-    elsif @subtract = @number1 - @number2
-    "#{@subtract}.to_s"
+    elsif @multiply = @number1 * @number2
+    "#{@multiply}.to_s"
+    elsif @divide = @number1 / @number2
+    "#{@divide}.to_s"
   end
   end
 end
