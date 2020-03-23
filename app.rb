@@ -37,7 +37,7 @@ get "/reversename/:name" do
     @add = @number1 + @number2
     "#{@add}.to_s"
     @subtract @number1 - @number2
-    "#{@subtract.to_s"
+    "#{@subtract}.to_s"
   end
 end
 
