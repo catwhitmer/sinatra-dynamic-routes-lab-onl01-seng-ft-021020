@@ -35,7 +35,7 @@ get "/reversename/:name" do
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     case @operation
-    if @add = @number1 + @number2
+      when @add = @number1 + @number2
     "#{@add}.to_s"
     elsif @subtract = @number1 - @number2
     "#{@subtract}.to_s"
