@@ -31,10 +31,11 @@ get "/reversename/:name" do
   end
   
   get "/:operation/:number1/:number2" do
+    @operation = params[:operation]
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
-    @operation = @number1 + @number2
-    "#{@operation}.to_s"
+    @result = @number1 @operation @number2
+    "#{@result}.to_s"
   end
 end
 
