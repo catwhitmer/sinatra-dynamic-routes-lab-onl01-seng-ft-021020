@@ -20,7 +20,7 @@ get "/reversename/:name" do
     "Goodbye, #{@user_name}."
   end
   
-  get "/multiply/:num1/:num2" do
+  get "/say/:word1/:word2/:word3/:word4/:word5" do
     @num1 = params[:num1].to_i
     @num2 = params[:num2].to_i
     @product = @num1 * @num2
