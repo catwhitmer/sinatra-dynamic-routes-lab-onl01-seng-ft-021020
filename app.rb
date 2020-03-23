@@ -33,7 +33,7 @@ get "/reversename/:name" do
   get "/operation/:number1/:number2" do
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
-    @product = @num1 * @num2
+    @product = @number1 + @number2
     "#{@product}.to_s"
   end
 end
