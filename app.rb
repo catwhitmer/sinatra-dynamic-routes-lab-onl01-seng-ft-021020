@@ -21,8 +21,8 @@ get "/reversename/:name" do
   end
   
   get "/say/:word1/:word2/:word3/:word4/:word5" do
-    @num1 = params[:num1].to_i
-    @num2 = params[:num2].to_i
+    @num1 = params[:num1]
+    @num2 = params[:num2]
     @product = @num1 * @num2
     "#{@product}.to_s"
   end
