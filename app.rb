@@ -39,13 +39,13 @@ get "/reversename/:name" do
     
       when 'add' 
         (@number1 + @number2).to_s
-    when @subtract = @number1 - @number2
-    "#{@subtract}.to_s"
-    when @multiply = @number1 * @number2
-    "#{@multiply}.to_s"
-    when @divide = @number1 / @number2
-    "#{@divide}.to_s"
-  end
+      when 'subtract'
+        (@number1 - @number2).to_s
+      when 'multiply'
+        (@number1 * @number2).to_s
+      when @divide = @number1 / @number2
+  
+     end
   end
 end
 
