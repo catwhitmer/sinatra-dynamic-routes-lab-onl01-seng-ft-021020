@@ -35,7 +35,7 @@ get "/reversename/:name" do
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     @add = @number1 + @number2
-    "#{@result}.to_s"
+    "#{@add}.to_s"
   end
 end
 
