@@ -15,7 +15,8 @@ get "/reversename/:name" do
   end
   
   get "/say/:number/:phrase" do
-    @user_name = params[:name]
+    @number = params[:name]
+    @phrase = params[:phrase]
     "Goodbye, #{@user_name}."
   end
   
