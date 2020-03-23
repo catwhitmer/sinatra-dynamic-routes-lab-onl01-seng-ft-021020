@@ -39,5 +39,6 @@ get "/reversename/:name" do
     elsif @subtract @number1 - @number2
     "#{@subtract}.to_s"
   end
+  end
 end
 
