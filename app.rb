@@ -15,7 +15,7 @@ get "/reversename/:name" do
     "#{@product}.to_s"
   end
   
-  get "/goodbye/:name" do
+  get "/say/:number/:phrase" do
     @user_name = params[:name]
     "Goodbye, #{@user_name}."
   end
